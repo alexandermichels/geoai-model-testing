@@ -4,9 +4,9 @@
     "estimated_runtime": "3-6 minutes",
     "container": "cybergisx/python3-0.9.4",
     "connector": "SingCVMFSConnector",
-    "pre_processing_stage": "python simple-linear.py",
-    "execution_stage": "python torchvision-test.py",
-    "post_processing_stage": "python sampleCNN.py",
+    "pre_processing_stage": "python simple/simple-linear.py",
+    "execution_stage": "python segmentation/torchvision-test.py",
+    "post_processing_stage": "python convolution/sampleCNN.py",
     "slurm_input_rules": {
            "time": {
                 "max": 30,
