@@ -17,5 +17,5 @@
     },
     "require_upload_data": false,
     "supported_hpc": ["anvil_gpu", "keeling_gpu"],
-    "default_hpc": "anvil_gpu"
+    "default_hpc": "keeling_gpu"
 }
