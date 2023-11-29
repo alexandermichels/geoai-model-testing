@@ -9,7 +9,9 @@ from torch import nn # nn contains all of PyTorch's building blocks for neural n
 import matplotlib.pyplot as plt
 
 # Check PyTorch version
-torch.__version__
+print(torch.__version__)
+
+print(torch.cuda.is_available())
 
 
 # In[2]:
