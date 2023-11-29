@@ -3,9 +3,9 @@
     "description": "Calculates spatial accessibility using a variety of metrics using the Pysal access package: https://github.com/pysal/access",
     "estimated_runtime": "3-6 minutes",
     "container": "pytorch",
-    "pre_processing_stage": "python simple/simple-linear.py",
-    "execution_stage": "python segmentation/torchvision-test.py",
-    "post_processing_stage": "python convolution/sampleCNN.py",
+    "pre_processing_stage": "python3 simple/simple-linear.py",
+    "execution_stage": "python3 segmentation/torchvision-test.py",
+    "post_processing_stage": "python3 convolution/sampleCNN.py",
     "slurm_input_rules": {
            "time": {
                 "max": 30,
