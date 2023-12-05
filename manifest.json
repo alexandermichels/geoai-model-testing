@@ -3,7 +3,7 @@
     "description": "Performs a few simple AI models using GPUs",
     "estimated_runtime": "~10 minutes",
     "container": "pytorch",
-    "pre_processing_stage": "nvidia-smi && python3 simple/simple-linear.py",
+    "pre_processing_stage": "python3 simple/simple-linear.py",
     "execution_stage": "python3 segmentation/torchvision-test.py",
     "post_processing_stage": "python3 convolution/sampleCNN.py",
     "slurm_input_rules": {
