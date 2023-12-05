@@ -1,9 +1,9 @@
 {
     "name": "GeoAI on GPU Demo",
-    "description": "Calculates spatial accessibility using a variety of metrics using the Pysal access package: https://github.com/pysal/access",
-    "estimated_runtime": "3-6 minutes",
+    "description": "Performs a few simple AI models using GPUs",
+    "estimated_runtime": "~10 minutes",
     "container": "pytorch",
-    "pre_processing_stage": "python3 simple/simple-linear.py",
+    "pre_processing_stage": "nvidia-smi && python3 simple/simple-linear.py",
     "execution_stage": "python3 segmentation/torchvision-test.py",
     "post_processing_stage": "python3 convolution/sampleCNN.py",
     "slurm_input_rules": {
@@ -16,6 +16,6 @@
             }
     },
     "require_upload_data": false,
-    "supported_hpc": ["anvil_gpu", "keeling_gpu"],
+    "supported_hpc": ["anvil_gpu", "keeling_gpu", "keeling_community"],
     "default_hpc": "keeling_gpu"
 }
